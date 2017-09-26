@@ -1,0 +1,22 @@
+Installation instructions taken from here - https://facebook.github.io/react-native/docs/getting-started.html
+
+1. Install nodejs-https://nodejs.org/en/download/
+2. Install Expo on your phone device(download from Appstore or Googleplay).
+3. Open cmd on your computer and type the following commands:   "npm install -g create-react-native-app"
+																"create-react-native-app AwesomeProject"
+																"cd AwesomeProject"
+																"npm i --save react-native-keyboard-input"
+																"npm i --save react-native-autogrow-textinput"
+																"npm i --save react-native-blur"
+																
+4. Copy the file App.js I provided and paste it in the directory of the project you created
+   (should be in C:/users/username/AwesomeProject) and press "Replace the file in the destination"
+5. In the cmd type "npm start"(still inside the AwesomeProject directory).
+6. Open Expo on your device and press "Scan QR Code" and then scan the QR code from the cmd(press 'q' if it doesn't show).
+7. The app should now be running. If not, make sure that your phone is connected by wifi to the same network as your computer.
+Check that the ip address shown in the Expo app is the same as your computer ip address(type 'ipconfig' in the cmd).
+If it isn't, it might be because you have installed a virtual machine on your computer and Expo is trying to use the
+virtual machine's ip address. (happend to me)
+To change the ip address used by Expo- type in the cmd: "set REACT_NATIVE_PACKAGER_HOSTNAME=my_ip_address".
+(taken from here: https://stackoverflow.com/questions/43696813/react-native-expo-change-default-lan-ip)
+Now the app should work.
